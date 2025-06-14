@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ROYAL EYE CLINIC AND OPTICALS</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/new_img/logo.png" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+        <style>
+            /* Style for custom prev/next buttons */
+            .custom-prev,
+            .custom-next {
+                font-size: 24px; /* Adjust arrow size */
+                color: white; /* Change arrow color */
+                background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+                padding: 0px 10px;
+                border-radius: 50%; /* Circular button */
+                cursor: pointer;
+                transition: background 0.3s ease-in-out;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 10; /* Ensure it's above the images */
+            }
+
+            /* Hover effect for buttons */
+            .custom-prev:hover,
+            .custom-next:hover {
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+
+            /* Positioning the navigation buttons */
+            .custom-prev {
+                left: 0px !important; /* Move the prev button to the left */
+            }
+
+            .custom-next {
+                right: 0px !important; /* Move the next button to the right */
+            }
+
+            /* Make sure buttons stay within the modal */
+            .modal-body {
+                position: relative;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <img
+                    src="img/new_img/logo.png"
+                    height="90"
+                    width="160"
+                    alt="ROYAL EYE CLINIC AND OPTICALS"
+                    srcset=""
+                />
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 pb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div  class="owl-carousel-item position-relative">
+                    <img  class="img-fluid" src="img/new_img/main_bg1.png" alt="" />
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(53, 53, 53, 0.7)"
+                    >
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-8 text-center">
+                                    <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                                        Welcome To ROYAL EYE CLINIC AND OPTICALS
+                                    </h5>
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">
+                                        Your Vision, Our Mission
+                                    </h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                       Since 2009, Royal Eye Clinic & Opticals has been a trusted name in Cherthala for expert eye care and premium branded eyewear.
+                                    </p>
+                                    <a
+                                        href=""
+                                        class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/new_img/main_bg_2.png" alt="" />
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(53, 53, 53, 0.7)"
+                    >
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-8 text-center">
+                                    <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                                        Welcome To ROYAL EYE CLINIC AND OPTICALS
+                                    </h5>
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">
+                                        Expert Eye Care by Dr. M Chummar Augustus
+                                    </h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                        Get consultations from a highly qualified eye specialist – M.B.B.S, M.S (OPH), D.O. | Reg. Civil Surgeon – offering personalized and professional care.
+                                    </p>
+                                    <a
+                                        href=""
+                                        class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/new_img/main_bg3.png" alt="" />
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(53, 53, 53, 0.7)"
+                    >
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-8 text-center">
+                                    <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                                     Welcome To ROYAL EYE CLINIC AND OPTICALS
+                                    </h5>
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">
+                                        World-Class Brands. Cutting-Edge Testing.
+                                    </h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                         From Ray-Ban to Carl Zeiss, explore a wide collection of premium frames, lenses, and contact lenses, backed by advanced computerised eye testing.
+
+
+                                    </p>
+                                    <a
+                                        href=""
+                                        class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">Our Services</h1>
+                </div>
+                <div id="service-sections" class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/new_img/service_eyetesting.jpg" alt="" />
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">Computerised Eye Testing</h4>
+                                <p>
+                                 Get accurate and fast results with advanced computerised eye testing for precise vision correction.
+                                </p>
+                                <a class="fw-medium" href="#"
+                                    >Read More<i class="fa fa-arrow-right ms-2"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/new_img//service_branded_lense.jpg" alt="" />
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">Branded Frames, Lenses & Contact Lenses</h4>
+                                <p>
+                                 Choose from a wide range of stylish frames, premium lenses, and comfortable contact lenses from top international brands.
+                                </p>
+                                <a class="fw-medium" href="#"
+                                    >Read More<i class="fa fa-arrow-right ms-2"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/new_img/service_eye_onsultation" alt="" />
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">Specialist Eye Consultation</h4>
+                                <p>
+                                 Receive expert diagnosis consultations from Dr. M Chummar Augustus, M.B.B.S, M.S (OPH), D.O. – an experienced and trusted eye specialist.
+                                </p>
+                                <a class="fw-medium" href="#"
+                                    >Read More<i class="fa fa-arrow-right ms-2"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- About Start -->
+        <!-- <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container about px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute img-fluid w-100 h-100"
+                                src="img/cards/01.jpg"
+                                style="object-fit: cover"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">About Us</h1>
+                            </div>
+                            <p class="mb-4 pb-2">
+                                At Asas Construction and Consulting Pvt Ltd, we bring together
+                                experience, innovation, and precision to deliver high-quality
+                                construction and design solutions. Since our establishment in 2016,
+                                we have successfully delivered numerous residential, commercial, and
+                                industrial projects across Kerala.
+                            </p>
+                            <a href="/contact.html" class="btn btn-primary py-3 px-5"
+                                >Explore More</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- About End -->
+
+        <!-- Feature Start -->
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div id="whyChoose-section" class="container feature px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                            <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="p-lg-5 ps-lg-0">
+                                    <div class="section-title text-start">
+                                        <h1 class="display-5 mb-4">Why Choose Royal Eye Clinic and Opticals</h1>
+                                    </div>
+                                    <p class="mb-4 pb-2">
+                                      At Royal Eye Clinic and Opticals, we believe your eyes deserve nothing but the best. With over 15 years of dedicated service since our establishment in 2009, we have built a reputation for excellence in eye care. Our clinic is led by Dr. M Chummar Augustus, a highly experienced and qualified eye specialist committed to providing accurate diagnosis and compassionate care.
+                                    </p>
+                                    <p class="mb-4 pb-2">
+                                     We use state-of-the-art computerised eye testing to ensure precise results and personalized vision solutions. Whether you’re looking for a regular eye check-up or the latest in premium eyewear, we offer a seamless experience from consultation to selection. With a wide range of global brands and the option for frame and lens customization, we make sure your style and comfort are never compromised.
+
+Your vision is our priority — and your satisfaction is our promise.
+                                    </p>
+                                    <div class="row g-4">
+                                        <div class="col-12 col-md-6">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                                                    style="width: 60px; height: 60px"
+                                                >
+                                                    <i class="fa fa-check fa-2x text-primary"></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <p class="mb-2">15+ years of</p>
+                                                    <h5 class="mb-0">Trust</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                                                    style="width: 60px; height: 60px"
+                                                >
+                                                    <i class="fa fa-user-check fa-2x text-primary"></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <p class="mb-2">Advanced </p>
+                                                    <h5 class="mb-0">Eye Testing</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                                                    style="width: 60px; height: 60px"
+                                                >
+                                                    <i
+                                                        class="fa fa-drafting-compass fa-2x text-primary"
+                                                    ></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <p class="mb-2">Customized </p>
+                                                    <h5 class="mb-0">Frames & Lenses</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                                                    style="width: 60px; height: 60px"
+                                                >
+                                                    <i class="fa fa-headphones fa-2x text-primary"></i>
+                                                </div>
+                                                <div class="ms-4">
+                                                    <p class="mb-2">Customer</p>
+                                                    <h5 class="mb-0">Support</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pe-lg-0" style="min-height: 400px">
+                                <div class="position-relative h-100">
+                                    <img
+                                        class="position-absolute img-fluid w-100 h-100"
+                                        src="img/new_img/main_bg1.png"
+                                        style="object-fit: cover"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- Modal for Image Preview -->
+        <div
+            class="modal fade"
+            id="imageModal"
+            tabindex="-1"
+            aria-labelledby="imageModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="modalCarousel" class="owl-carousel">
+                            <!-- Images will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">Top Brands</h1>
+                </div>
+                <div id="project-sections" class="row card-columns g-4">
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <!-- <h5 class="mb-3">Jamshi Kakkad Mala</h5> -->
+                                <!-- <h6>- 5670 Sq.ft</h6> -->
+                                <!-- Carousel Container -->
+                                <div class="owl-carousel project-carousel">
+                                    <img
+                                        class="img-fluid preview-img"
+                                        src="img/new_img/rayban_logo.png"
+                                        alt="Project 1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <!-- <h5 class="mb-3">Pramosh Payyoli</h5>
+                                <h6>- 2464 Sq.ft</h6> -->
+                                <!-- Carousel Container -->
+                                <div class="owl-carousel project-carousel">
+                                    <img
+                                        class="img-fluid preview-img"
+                                        src="img/new_img/carrera.png"
+                                        alt="Project 1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <!-- <h5 class="mb-3">Anoop Kakkodi</h5>
+                                <h6>- 4500 Sq.ft</h6> -->
+                                <!-- Carousel Container -->
+                                <div class="owl-carousel project-carousel">
+                                    <img
+                                        class="img-fluid preview-img"
+                                        src="img/new_img/pierre-cardin.png"
+                                        alt="Project 1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <!-- <h5 class="mb-3">Jamshad karanthur</h5>
+                                <h6>- 5670 Sq.ft</h6> -->
+                                <!-- Carousel Container -->
+                                <div class="owl-carousel project-carousel">
+                                    <img
+                                        class="img-fluid preview-img"
+                                        src="img/new_img/fastrack.png"
+                                        alt="Project 1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <!-- <h5 class="mb-3">Balakrishnan Thondayad</h5>
+                                <h6>- 2674 Sq.ft</h6> -->
+                                <!-- Carousel Container -->
+                                <div class="owl-carousel project-carousel">
+                                    <img
+                                        class="img-fluid preview-img"
+                                        src="img/new_img/giordano.png"
+                                        alt="Project 1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <!-- <h5 class="mb-3">Muhammed Perode</h5>
+                                <h6>- 5877 Sq.ft</h6> -->
+                                <div class="owl-carousel project-carousel">
+                                    <img
+                                        class="img-fluid preview-img"
+                                        src="img/new_img/gucci.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <!-- <h5 class="mb-3">Abdul Salim Morikkara</h5>
+                                <h6>- 2799 Sq.ft</h6> -->
+                                <div class="owl-carousel project-carousel">
+                                    <img
+                                        class="img-fluid preview-img"
+                                        src="img/new_img/police.png"
+                                        alt="Project 1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <!-- <h5 class="mb-3">Abdul Salim Morikkara</h5>
+                                <h6>- 2799 Sq.ft</h6> -->
+                                <div class="owl-carousel project-carousel">
+                                    <img
+                                        class="img-fluid preview-img"
+                                        src="img/new_img/Idee.webp"
+                                        alt="Project 1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Projects End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Address</h4>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>
+                            South of government hospital,cherthala , 688524
+                        </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 8129881333</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0478 2811100</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>royalopticalscherthala2255@gmail.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Services</h4>
+                        <a class="btn btn-link" href="">Computerised Eye Testing</a>
+                        <a class="btn btn-link" href="">Branded Frames, Lenses & Contact Lenses</a>
+                        <a class="btn btn-link" href="">Specialist Eye Consultation</a>
+                        <!-- <a class="btn btn-link" href="">Rennovation </a>
+                        <a class="btn btn-link" href=""> Exterior Design</a>
+                        <a class="btn btn-link" href="">House Planning</a> -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Quick Links</h4>
+                        <a class="btn btn-link" href="/about.html">About Us</a>
+                        <a class="btn btn-link" href="/service.html">Our Services</a>
+                        <a class="btn btn-link" href="/gallery.html">Gallery</a>
+                        <a class="btn btn-link" href="/contact.html">Contact Us</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">ROYAL EYE CLINIC AND OPTICALS</h4>
+                        <p>Your Vision Our Mission</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px">
+                            <div class="d-flex pt-2">
+                                <!-- <a
+                                    class="btn btn-outline-light btn-social"
+                                    href="https://www.instagram.com/asaspvtltd"
+                                    ><i class="fab fa-twitter"></i
+                                ></a> -->
+                                <a
+                                    class="btn btn-outline-light btn-social"
+                                    href="https://www.instagram.com/royal_eyeclinicandopticals"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                                <a
+                                    class="btn btn-outline-light btn-social"
+                                    href="https://www.instagram.com/royal_eyeclinicandopticals"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                                <a
+                                    class="btn btn-outline-light btn-social"
+                                    href="https://www.instagram.com/royal_eyeclinicandopticals"
+                                    ><i class="fab fa-youtube"></i
+                                ></a>
+                                <!-- <a class="btn btn-outline-light btn-social" href=""
+                                    ><i class="fab fa-linkedin-in"></i
+                                ></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy;
+                            <a class="border-bottom" href="/service.html">ROYAL EYE CLINIC AND OPTICALS</a>,
+                            All Right Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            Designed and developed by
+                            <a class="border-bottom" href="https://www.instagram.com/lumoraframes"
+                                >Team Lumora</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+
+        <!-- Elfsight Widget -->
+        <div
+            class="elfsight-app-16a55765-fa99-4fb6-ad61-9d899b02dbd6"
+            data-elfsight-app-lazy
+            style="position: relative; z-index: 1"
+        ></div>
+        <a
+            href="https://api.whatsapp.com/send?phone=918129881333&amp;text= Hi, I would like to know more about your services!"
+            target="_blank"
+        >
+            <img
+                src="img/logo/whatsapp.png"
+                style="
+                    position: fixed;
+                    bottom: 95px;
+                    right: 30px;
+                    height: 48px;
+                    width: 48px;
+                    z-index: 101;
+                    object-fit: cover;
+                "
+            />
+        </a>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+     
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+        <script>
+            $(document).ready(function () {
+                // Initialize Owl Carousel for all project sections
+                $('.project-carousel').each(function () {
+                    $(this).owlCarousel({
+                        items: 1,
+                        loop: true,
+                        nav: false, // Hide arrows in the main carousel
+                        dots: false, // Hide dots in the main carousel
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true,
+                    });
+                });
+
+                // Open modal with carousel images
+                $(document).on('click', '.preview-img', function () {
+                    let images = $(this).closest('.project-carousel').find('img'); // Get all images from the clicked project
+                    let modalCarousel = $('#modalCarousel');
+
+                    // Destroy the existing Owl Carousel instance (if any)
+                    modalCarousel.owlCarousel('destroy').empty();
+
+                    // Append images to modal carousel
+                    images.each(function () {
+                        modalCarousel.append(
+                            `<div><img class="img-fluid" src="${$(this).attr(
+                                'src'
+                            )}" alt="Preview"></div>`
+                        );
+                    });
+
+                    modalCarousel.owlCarousel({
+                        items: 1,
+                        loop: true,
+                        nav: true, // Show navigation inside modal
+                        dots: true, // Show dots inside modal
+                        autoplay: false,
+                        navText: [
+                            '<span class="custom-prev">&larr;</span>', // Custom prev button
+                            '<span class="custom-next">&rarr;</span>', // Custom next button
+                        ],
+                    });
+
+                    $('#imageModal').modal('show');
+                });
+
+                // Ensure modal carousel resets when modal is closed
+                $('#imageModal').on('hidden.bs.modal', function () {
+                    $('#modalCarousel').owlCarousel('destroy').empty(); // Clear images on modal close
+                });
+            });
+        </script>
+    </body>
+</html>
